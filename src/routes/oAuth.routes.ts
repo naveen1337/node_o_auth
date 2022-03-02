@@ -13,5 +13,6 @@ const router: Router = express.Router({
 });
 
 router.post("/authenticate", [validateInput, getUserRecord], authenticate);
+router.get("/accesstoken", [validateInput, getUserRecord], authenticate);
 
 export default router;
